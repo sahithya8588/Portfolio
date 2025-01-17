@@ -1,0 +1,312 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sahithya.E - Data Engineer Portfolio</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body data-theme="light">
+  <nav>
+    <div class="logo">
+      <svg width="40" height="40" viewBox="0 0 40 40">
+        <circle cx="20" cy="20" r="18" fill="none" stroke="currentColor" stroke-width="2"/>
+        <text x="50%" y="50%" text-anchor="middle" dy=".3em" fill="currentColor">SE</text>
+      </svg>
+      <span>Sahithya.E</span>
+    </div>
+    <div class="nav-links">
+      <a href="#home">Home</a>
+      <a href="#about">About</a>
+      <a href="#skills">Skills</a>
+      <a href="#work">Experience</a>
+      <a href="#education">Education</a>
+      <a href="#contact">Contact</a>
+    </div>
+    <button class="theme-toggle">
+      <i class="fas fa-moon"></i>
+    </button>
+  </nav>
+
+  <section id="home">
+    <div class="hero" data-aos="fade-up">
+      <div class="hero-content">
+        <div class="profile-header">
+          <div class="profile-image">
+            <svg class="profile-placeholder" viewBox="0 0 100 100">
+              <circle cx="50" cy="50" r="45" fill="var(--primary-color)" opacity="0.1"/>
+              <path d="M50 20C44.4772 20 40 24.4772 40 30C40 35.5228 44.4772 40 50 40C55.5228 40 60 35.5228 60 30C60 24.4772 55.5228 20 50 20ZM36 50C30.4772 50 26 54.4772 26 60V65C26 67.7614 28.2386 70 31 70H69C71.7614 70 74 67.7614 74 65V60C74 54.4772 69.5228 50 64 50H36Z" fill="var(--primary-color)"/>
+            </svg>
+            <div class="upload-overlay">
+              <i class="fas fa-camera"></i>
+              <input type="file" id="profile-upload" accept="image/*">
+            </div>
+          </div>
+          <div class="profile-text">
+            <h1>Hello, I'm <span class="highlight">Sahithya.E</span></h1>
+            <h2>Senior Data Engineer</h2>
+            <p>Transforming Complex Data Challenges into Business Solutions</p>
+          </div>
+        </div>
+        <div class="cta-buttons">
+          <a href="#contact" class="primary-btn">Get in Touch</a>
+          <a href="#work" class="secondary-btn">View Experience</a>
+        </div>
+      </div>
+      <div class="hero-image">
+        <div class="data-viz">
+          <canvas id="skillChart"></canvas>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="about" data-aos="fade-up">
+    <h2>About me</h2>
+    <div class="about-content">
+      <div class="about-text">
+        <p>
+        I am an experienced Data Engineer with over 8 years of expertise in designing, developing, and optimizing data pipelines and ETL workflows across financial, healthcare, and retail domains. My proficiency spans cloud platforms like AWS, Azure, and Snowflake, alongside robust programming skills in Python and PySpark, enabling scalable, secure, and high-performance data solutions.
+        I have successfully implemented complex ETL pipelines using AWS Glue and PySpark, managed large-scale data lakes on AWS S3, and automated real-time data ingestion using AWS Lambda and Step Functions. My experience includes database migration to AWS with tools like AWS DMS and optimizing data streaming solutions using AWS Kinesis.
+        In Azure, I have delivered scalable data solutions using Azure Data Factory, Azure SQL, and Azure Machine Learning Studio, while ensuring data compliance with regulations like GDPR and HIPAA. Skilled in data modeling, I specialize in Star and Snowflake Schemas and have reduced ETL processing times by 50% through advanced optimization.
+        My expertise extends to integrating Snowflake with BI tools like Tableau and Power BI, supporting real-time analytics, and deploying CI/CD pipelines with Terraform, Jenkins, and Kubernetes. I thrive in collaborating with data scientists to support machine learning projects, leveraging tools like Pandas and scikit-learn for predictive analytics.
+        With a passion for solving complex data challenges, I bring innovative solutions to every project, ensuring impactful business insights and operational efficiency.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="skills" data-aos="fade-up">
+    <h2>Technical Expertise</h2>
+    <div class="skills-container">
+      <div class="skill-category">
+        <h3>Programming & Databases</h3>
+        <div class="skill-list">
+          <div class="skill-item">
+            <i class="fas fa-code"></i>
+            <span>SQL, PL/SQL</span>
+          </div>
+          <div class="skill-item">
+            <i class="fab fa-python"></i>
+            <span>Python, R</span>
+          </div>
+          <div class="skill-item">
+            <i class="fas fa-database"></i>
+            <span>MySQL, MS SQL</span>
+          </div>
+          <div class="skill-item">
+            <i class="fas fa-server"></i>
+            <span>Teradata, Hive</span>
+          </div>
+        </div>
+      </div>
+      
+      <div class="skill-category">
+        <h3>Cloud & ETL Tools</h3>
+        <div class="skill-list">
+          <div class="skill-item">
+            <i class="fab fa-aws"></i>
+            <span>AWS Suite</span>
+          </div>
+          <div class="skill-item">
+            <i class="fab fa-microsoft"></i>
+            <span>Azure</span>
+          </div>
+          <div class="skill-item">
+            <i class="fas fa-tools"></i>
+            <span>Informatica</span>
+          </div>
+          <div class="skill-item">
+            <i class="fas fa-fire"></i>
+            <span>Pentaho</span>
+          </div>
+        </div>
+      </div>
+      
+      <div class="skill-category">
+        <h3>Visualization & Tools</h3>
+        <div class="skill-list">
+          <div class="skill-item">
+            <i class="fas fa-chart-bar"></i>
+            <span>Power BI</span>
+          </div>
+          <div class="skill-item">
+            <i class="fas fa-chart-line"></i>
+            <span>Tableau</span>
+          </div>
+          <div class="skill-item">
+            <i class="fab fa-windows"></i>
+            <span>Visual Studio</span>
+          </div>
+          <div class="skill-item">
+            <i class="fab fa-linux"></i>
+            <span>Linux/Windows</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="work" data-aos="fade-up">
+    <h2>Recent Work</h2>
+    <div class="experience-timeline">
+      <div class="experience-card active">
+        <div class="experience-header">
+          <h3>Home Depot</h3>
+          <span class="date">Jan 2024 - Present</span>
+        </div>
+        <div class="experience-content">
+          <ul>
+          <li>Designed and implemented complex ETL pipelines using PySpark to integrate diverse data sources into Snowflake, AWS Data Lake (S3), and Hive, ensuring data quality, consistency, and scalability for enterprise-wide analytics and reporting.</li>
+          <li>Optimized data processing workflows in AWS and Snowflake, leveraging tools like PySpark, AWS Glue, and Snowflake queries to enhance performance and support large-scale data analysis, predictive modeling, and real-time analytics.</li>
+          <li>Automated ETL workflows and data transformations using PySpark and AWS Glue, reducing manual intervention, ensuring timely data updates, and enhancing data-driven decision-making across business functions.</li>
+          <li>Deployed AWS data governance frameworks such as Collibra for metadata management, data lineage, and cataloguing, ensuring visibility, compliance, and security of critical business data in Snowflake and AWS environments.</li>
+          <li>Collaborated with data scientists to develop machine learning models using AWS SageMaker and Python, enabling predictive analytics and actionable business insights to optimize retail operations and decision-making processes.</li>
+          <li>Enhanced data security and compliance by implementing encryption, access control, and data protection measures in AWS and Snowflake, safeguarding sensitive operational and business intelligence data.</li>
+          <li>Developed and maintained Python-based data pipelines, AWS Lambda, and Step Functions to automate data ingestion, transformation, and processing, improving operational efficiency and enabling consistent access to analytics-ready datasets.</li>
+          </ul>
+          <div class="tech-stack">
+            <span class="tech-badge">PySpark</span>
+            <span class="tech-badge">Snowflake</span>
+            <span class="tech-badge">AWS Glue</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="experience-card">
+        <div class="experience-header">
+          <h3>National Grid</h3>
+          <span class="date">Oct 2021 - Dec 2023</span>
+        </div>
+        <div class="experience-content">
+          <ul>
+            <li>Migrated on-premises and Azure-based data solutions to AWS, leveraging AWS-native services like S3, Glue, and Kinesis to enhance scalability, performance, and cost optimization.</li>
+            <li>Transitioned data storage from Azure Blob Storage and Azure Data Lake Storage to Amazon S3, implementing lifecycle policies, versioning, and secure encryption via AWS KMS, ensuring data integrity and regulatory compliance.</li>
+            <li>Reengineered ETL workflows by migrating from Azure Data Factory to AWS Glue and AWS Step Functions, automating processes, and improving processing efficiency for financial data.</li>
+            <li>Migrated real-time data processing solutions from Azure Event Hubs and Stream Analytics to AWS Kinesis and Lambda, achieving low-latency processing for financial transactions.</li>
+            <li>Replaced Azure SQL Database and Synapse Analytics with AWS Redshift and Athena for improved query performance, advanced analytics, and cost-effective big data processing.</li>
+            <li>Implemented monitoring, alerting, and access control systems by transitioning from Azure Monitor, RBAC, and Power BI to AWS CloudWatch, IAM, and QuickSight for seamless pipeline performance tracking and business insights.</li>
+            <li>Replaced Azure-based services like Logic Apps, Functions, and DevOps pipelines with AWS Lambda, EventBridge, S3, and CodePipeline, ensuring scalability, automation, and streamlined CI/CD for data workflows.</li>
+          </ul>
+          <div class="tech-stack">
+            <span class="tech-badge">Azure</span>
+            <span class="tech-badge">AWS</span>
+            <span class="tech-badge">Data Pipeline</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="experience-card">
+        <div class="experience-header">
+          <h3>GAP</h3>
+          <span class="date">Mar 2018 - Sep 2021</span>
+        </div>
+        <div class="experience-content">
+          <ul>
+            <li>Design and implement data pipelines to transfer data from various sources to Azure destinations, such as Azure Data Lake, Azure SQL Database, or Azure Synapse Analytics.</li>
+            <li>Build and optimize data storage solutions on Azure, leveraging Azure Blob Storage, Azure Data Lake Storage, or Azure SQL Database to efficiently handle large volumes of data.</li>
+            <li>Develop and maintain data processing solutions on Azure using Azure Databricks, Azure HDInsight, or Azure Stream Analytics to transform, cleanse, and enrich data.</li>
+            <li>Monitor the performance of Azure data solutions, troubleshoot issues, and resolve bottlenecks, data quality concerns, and other performance-related problems.</li>
+            <li>Develop and maintain BI applications, dashboards, and reports using Microsoft Power BI, ensuring data accuracy, integrity, and security within the BI environment.</li>
+            <li>Collaborate with cross-functional teams to define KPI</li>
+          </ul>
+          <div class="tech-stack">
+            <span class="tech-badge">Azure Data Factory</span>
+            <span class="tech-badge">Power BI</span>
+            <span class="tech-badge">SQL Server</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="experience-card">
+        <div class="experience-header">
+          <h3>Paytm</h3>
+          <span class="date">Mar 2017 - Feb 2018</span>
+        </div>
+        <div class="experience-content">
+          <ul>
+            <li>Designed and managed a centralized data lake on Amazon S3, providing scalable and secure storage for financial data.</li>  
+            <li>Automated data ingestion and processing workflows using AWS Lambda, ensuring timely updates and reducing manual intervention.</li>  
+            <li>Implemented ETL processes using AWS Glue to migrate and transform financial data from various sources into Snowflake.</li>  
+            <li>Utilized AWS Kinesis for real-time data streaming, enabling timely financial transactions and fraud detection.</li>  
+            <li>Configured and managed data security using AWS IAM policies and AWS Key Management Service (KMS) to ensure compliance with financial regulations.</li>  
+            <li>Implemented monitoring and logging for data pipelines using AWS CloudWatch, improving reliability and facilitating quick issue resolution.</li> 
+            <li>Leveraged AWS Redshift for data warehousing solutions, supporting comprehensive financial analytics and reporting.</li>
+          </ul>
+          <div class="tech-stack">
+            <span class="tech-badge">AWS</span>
+            <span class="tech-badge">Python</span>
+            <span class="tech-badge">Data Lakes</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="education" data-aos="fade-up">
+    <h2>Education</h2>
+    <div class="education-timeline">
+      <div class="timeline-item">
+        <div class="timeline-content">
+          <h3>Master of Science in Computer Science</h3>
+          <p>University of Memphis, USA</p>
+          <div class="education-details">
+            <i class="fas fa-graduation-cap"></i>
+            <span>Advanced coursework in Data Engineering and Analytics</span>
+          </div>
+        </div>
+      </div>
+      <div class="timeline-item">
+        <div class="timeline-content">
+          <h3>Bachelor in Electronics and Communication Engineering</h3>
+          <p>Krishnaveni Engineering College, India</p>
+          <div class="education-details">
+            <i class="fas fa-university"></i>
+            <span>Foundation in Technical Sciences</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact" data-aos="fade-up">
+    <h2>Get in Touch</h2>
+    <div class="contact-container">
+     
+      <div class="contact-info">
+        <div class="contact-item">
+          <i class="fas fa-envelope"></i>
+          <a href="mailto:sahithya.e@example.com">sahithya.e@example.com</a>
+        </div>
+        <div class="contact-item">
+          <i class="fas fa-phone"></i>
+          <a href="tel:+1234567890">+1 (234) 567-890</a>
+        </div>
+        <div class="contact-item">
+          <i class="fas fa-map-marker-alt"></i>
+          <span>Charlotte, North Carolina</span>
+        </div>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="footer-content">
+      <div class="footer-links">
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#work">Experience</a>
+        <a href="#contact">Contact</a>
+      </div>
+      <p>&copy; 2024 Sahithya.E - Data Engineering Portfolio. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
